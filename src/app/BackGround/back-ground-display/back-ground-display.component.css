@@ -1,0 +1,170 @@
+
+/* Creates a background Container and the elements within it  */
+.container {
+  width : 100vw;
+  height : 90vh;
+  z-index: 1;
+  position : fixed;
+  display : flex ;
+
+}
+
+.consoleButton {
+  margin-left: 1rem;
+  width : 3rem ;
+
+}
+
+.backg {
+  /* background-color:  skyblue; */
+  width : 50%;
+  height : 100%;
+  z-index: 1;
+  position : relative ;
+}
+
+.ground {
+  background-color: green;
+  z-index: 2;
+  position: relative;
+  top : 90%;
+  width : 100%;
+  height : 10%;
+}
+
+.sunWrapper {
+  /* background-color: black; */
+  position : relative;
+  width: 100%;
+  height : 10%;
+  /* animation : MoveSun 12s infinite ; */
+  z-index: 3;
+  top : 80%;
+  animation-direction: reverse;
+}
+.sun {
+  background-color : orange ;
+  border-radius: 100%;
+  width : 10% ;
+  height : 100% ;
+  position : relative ;
+  box-shadow: 0 0 10px orange,
+                0 0 60px orange,
+                0 0 200px yellow,
+                inset 0 0 80px yellow;
+
+}
+
+
+@keyframes MoveSun {
+  0% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform : rotate(0deg)
+  }
+
+}
+
+
+.console {
+  display : flex;
+  align-items: center;
+  flex-direction: column;
+  width : 50% ;
+  height : 100%;
+  background-color: gray;
+}
+
+.consoleTitle {
+border-style: double;
+
+}
+
+
+
+.square {
+  width : 10vw;
+  height : 10vw;
+  background-color: red;
+}
+
+
+.squareBG {
+  width : 100vw;
+}
+.letterBG {
+
+}
+.letter {
+  font-size: 40px;
+}
+
+
+.typewriter h1 {
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid orange; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  animation:
+    typing 3.5s steps(40, end),
+    blink-caret .5s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: orange; }
+}
+
+
+.container2 {
+  width : 100vw;
+  height : 100vh;
+  background: #333;
+  padding-top: 5em;
+  display: flex;
+  justify-content: center;
+}
+
+/* .ground {
+background-color:  green;
+width : 50%;
+height : 30vh;
+z-index: 2;
+}
+.sunWrapper {
+width : 100%;
+top : 300px;
+left : 300px;
+animation-direction: reverse;
+animation: MoveSun 3s infinite;
+}
+.sun {
+  background : orange ;
+  border-radius: 100%;
+  width : 10% ;
+  height : 10% ;
+  position : relative ;
+  z-index: 5;
+
+
+
+}
+
+@keyframes MoveSun {
+  0% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform : rotate(0deg)
+  }
+
+} */
