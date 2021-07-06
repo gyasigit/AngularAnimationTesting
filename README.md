@@ -10,8 +10,8 @@ Simple Background Animation uses keyframs and CSS to control animations. The fun
 
 ## Angular Animations 
 
-This project will attempt to experiment with the angualr animation library.[Angular Animation Library](https://angular.io/guide/animations) .
-Specifically using angular animations. 
+This project will attempt to experiment with the [Angular Animation Library](https://angular.io/guide/animations) .
+Specifically using angular animation , trigger style and state . 
 
 
 ### Angular Testing
